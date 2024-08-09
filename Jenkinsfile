@@ -13,11 +13,11 @@ pipeline{
                 cleanWs()
             }
         }
-        stage ('checkout scm') {
-            steps {
-                git 'https://github.com/Aj7Ay/jpetstore-6.git'
-            }
-        }
+        //stage ('checkout scm') {
+          //  steps {
+            //    git 'https://github.com/Aj7Ay/jpetstore-6.git'
+            //}
+        //}
 
         stage('File System Scan') {
             steps {
