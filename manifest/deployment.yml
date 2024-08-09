@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: jpetstore
-  replicas: 2 # Number of replicas that will be created for this deployment
+  replicas: 1 # Number of replicas that will be created for this deployment
   template:
     metadata:
       labels:
@@ -32,6 +32,6 @@ spec:
     app: jpetstore
   ports:
     - protocol: "TCP"
-      port: 8093
+      port: 8098
       targetPort: 8080 
   type: NodePort # type of the service.
